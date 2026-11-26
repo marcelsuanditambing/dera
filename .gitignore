@@ -1,0 +1,24 @@
+# LaTeX auxiliary
+*.aux
+*.bbl
+*.bbl-SAVE-ERROR
+*.bcf
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.loa
+*.lol
+*.run.xml
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.xdv
+
+# OS & Syncthing
+.DS_Store
+*.sync-conflict-*
+.stfolder
+.stversions
