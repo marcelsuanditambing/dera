@@ -1,0 +1,264 @@
+% ==========================================
+% BAB V EVALUASI
+% ==========================================
+\cleardoublepage
+\chapter{EVALUASI}
+\label{chap:V}
+
+Bab ini merupakan tahap \textit{evaluation} pada DSRM, yaitu menilai seberapa baik DERA memenuhi kebutuhan yang ditetapkan. Evaluasi hanya dilakukan terhadap DERA dan bersifat \textit{ex-ante}, sedangkan EA Kemhan RI pada Bab IV berperan sebagai demonstrasi.
+
+\section{Rancangan Evaluasi}
+\label{sec:V.1}
+
+\subsection{Kriteria dan Metode Evaluasi}
+\label{sec:V.1.1}
+
+DERA dievaluasi berdasarkan lima kriteria yang diturunkan dari kebutuhan arsitektur referensi pada Tabel~\ref{tab:III.2}. Metode evaluasi dipilih sesuai sifat setiap kriteria, sebagaimana disajikan pada Tabel~\ref{tab:V.1}.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.183\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.149\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.312\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.263\linewidth}@{}}
+\caption{Kriteria dan Metode Evaluasi DERA}\label{tab:V.1}\\
+\toprule
+\textbf{Kriteria} & \textbf{KR Terkait} & \textbf{Metode} & \textbf{Ukuran dan Target}\\
+\midrule
+\endfirsthead
+\multicolumn{4}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{Kriteria} & \textbf{KR Terkait} & \textbf{Metode} & \textbf{Ukuran dan Target}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\textit{Completeness} & KR-01, KR-02, KR-07 & Analitis: daftar periksa cakupan kebutuhan, unsur C6ISR, dan komponen arsitektur referensi & Persentase butir tercakup; target 100\%\\*
+\textit{Consistency} & KR-02 & Analitis: pemeriksaan aturan K1–K4 dan keterkaitan antardomain & Persentase aturan K1–K4 yang terpenuhi; target 100\%\\
+\textit{Traceability} & KR-08 & Analitis: matriks keterlacakan (Bagian A dan Bagian B) & Persentase kebutuhan dan komponen yang terlacak; target 100\%\\
+\textit{Reusability} & KR-09 & Penilaian pakar: kuesioner butir R1–R5 & Rata-rata skor; target ≥ 3,41\\*
+\textit{Adaptability} & KR-09 & Penilaian pakar: kuesioner butir A1–A4 & Rata-rata skor; target ≥ 3,41\\
+\end{longtable}
+\endgroup
+
+Tabel~\ref{tab:V.1} menunjukkan dua pendekatan evaluasi. \textit{Completeness}, \textit{consistency}, dan \textit{traceability} merupakan sifat internal DERA, sehingga dievaluasi secara analitis melalui pemeriksaan langsung terhadap artefaknya. Hasilnya dapat diulang oleh pihak lain. \textit{Reusability} dan \textit{adaptability} berkaitan dengan penggunaan DERA di luar Kemhan RI, sehingga dinilai oleh pakar dari beberapa organisasi.
+
+Pemeriksaan \textit{consistency} menggunakan empat aturan yang diturunkan dari \textit{metamodel} DERA (Tabel~\ref{tab:III.8}), yaitu:
+
+\begin{enumerate}[label=K\arabic*., leftmargin=*]
+\item Setiap jenis entitas dan istilah inti yang digunakan dalam DERA terdefinisi dalam kosakata DERA;
+\item Setiap hubungan antarelemen sesuai dengan hubungan pada \textit{metamodel} DERA;
+\item Tidak ada elemen yatim, yaitu setiap kapabilitas direalisasikan oleh proses atau layanan bisnis, setiap aplikasi mendukung kapabilitas, dan setiap layanan teknologi melayani aplikasi; dan
+\item Tidak ada posisi teknis atau pola yang bertentangan dengan prinsip DERA.
+\end{enumerate}
+
+\subsection{Pakar dan Instrumen}
+\label{sec:V.1.2}
+
+Pakar terdiri atas tiga kategori, yaitu pakar akademisi yang memahami EA, pakar praktisi Kemhan RI yang memahami pengelolaan sistem informasi pertahanan, dan pakar mitra dari industri pertahanan atau instansi terkait. Komposisi tersebut dipilih karena arsitektur referensi digunakan oleh lebih dari satu organisasi, sehingga penilaiannya perlu melibatkan pihak dari beberapa organisasi. Setiap pakar mencantumkan nama dan kategorinya, kemudian menerima ringkasan DERA dan contoh penerapannya pada Kemhan RI sebelum mengisi kuesioner.
+
+Instrumen penilaian berupa kuesioner skala Likert 1–5, yaitu 1 = sangat tidak setuju hingga 5 = sangat setuju. Butir kuesioner disajikan pada Tabel~\ref{tab:V.2}.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.095\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.678\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.166\linewidth}@{}}
+\caption{Butir Kuesioner Penilaian Pakar}\label{tab:V.2}\\
+\toprule
+\textbf{Kode} & \textbf{Pernyataan} & \textbf{Kriteria}\\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{Kode} & \textbf{Pernyataan} & \textbf{Kriteria}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\centering\arraybackslash R1 & Prinsip arsitektur DERA dapat digunakan oleh organisasi pertahanan selain Kemhan RI tanpa perubahan mendasar. & \textit{Reusability}\\*
+\centering\arraybackslash R2 & CRM berbasis C6ISR dapat menjadi acuan pemetaan kapabilitas di organisasi pertahanan lain. & \textit{Reusability}\\
+\centering\arraybackslash R3 & Arsitektur referensi domain bisnis, data, aplikasi, dan teknologi cukup generik untuk diturunkan menjadi arsitektur organisasi pertahanan lain. & \textit{Reusability}\\
+\centering\arraybackslash R4 & Standar dan \textit{building blocks} DERA dapat digunakan bersama lintas organisasi pertahanan untuk mendukung interoperabilitas. & \textit{Reusability}\\
+\centering\arraybackslash R5 & Panduan penerapan DERA dalam TOGAF ADM dapat diikuti oleh arsitek di organisasi pertahanan lain. & \textit{Reusability}\\
+\centering\arraybackslash A1 & DERA menyediakan mekanisme yang jelas untuk menyesuaikan arsitektur dengan mandat, ukuran, dan kondisi organisasi. & \textit{Adaptability}\\
+\centering\arraybackslash A2 & Komponen DERA dapat diperbarui ketika terjadi perubahan regulasi, doktrin, atau kebijakan pertahanan tanpa merombak keseluruhan arsitektur. & \textit{Adaptability}\\
+\centering\arraybackslash A3 & DERA dapat mengakomodasi teknologi dan domain operasi baru melalui penambahan atau penggantian \textit{building blocks}. & \textit{Adaptability}\\*
+\centering\arraybackslash A4 & DERA dapat diterapkan secara bertahap sesuai tingkat kematangan arsitektur organisasi. & \textit{Adaptability}\\
+\end{longtable}
+\endgroup
+
+Selain sembilan butir tersebut, kuesioner memuat dua pertanyaan terbuka, yaitu komponen DERA yang paling sulit digunakan ulang atau disesuaikan beserta alasannya (O1) dan saran penyempurnaan DERA (O2). Jawaban dianalisis secara deskriptif dengan menghitung rata-rata skor setiap butir dan setiap kriteria. Rata-rata skor dikategorikan dengan interval (5 − 1)/5 = 0,80, yaitu 1,00–1,80 sangat rendah, 1,81–2,60 rendah, 2,61–3,40 cukup, 3,41–4,20 tinggi, dan 4,21–5,00 sangat tinggi. Suatu kriteria dinyatakan terpenuhi apabila rata-rata skornya paling rendah 3,41, yaitu berada pada kategori tinggi.
+
+\section{Evaluasi Analisis}
+\label{sec:V.2}
+
+\subsection{\textit{Completeness}}
+\label{sec:V.2.1}
+
+\textit{Completeness} diperiksa pada tiga aspek, yaitu cakupan kebutuhan, cakupan unsur C6ISR, dan cakupan komponen arsitektur referensi. Cakupan kebutuhan disajikan pada Tabel~\ref{tab:V.3}, beserta bukti penerapannya pada Bab IV.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.106\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.453\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.378\linewidth}@{}}
+\caption{Cakupan Kebutuhan Arsitektur Referensi}\label{tab:V.3}\\
+\toprule
+\textbf{KR} & \textbf{Komponen DERA yang Memenuhi} & \textbf{Bukti Penerapan pada Bab IV}\\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{KR} & \textbf{Komponen DERA yang Memenuhi} & \textbf{Bukti Penerapan pada Bab IV}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+KR-01 & Lapis operasional CRM, pola P1–P4, serta ABB-04 hingga ABB-10 & Tabel~\ref{tab:IV.3}, Tabel~\ref{tab:IV.20}, Tabel~\ref{tab:IV.29}\\*
+KR-02 & BRA, DRA, ARA, dan TRA & IV.4 hingga IV.6\\
+KR-03 & Prinsip \textit{Security by Design}, klasifikasi tiga tingkat, pola P5, dan aspek keamanan & Tabel~\ref{tab:IV.16}, Gambar~\ref{fig:IV.13}, Tabel~\ref{tab:IV.23}\\
+KR-04 & Prinsip \textit{Interoperability}, kosakata, kamus data, layanan integrasi, dan pola P6 & Tabel~\ref{tab:IV.20}, Gambar~\ref{fig:IV.11}\\
+KR-05 & Tujuan strategis, prinsip \textit{Smart Defence Oriented}, dan lapis strategis CRM & Tabel~\ref{tab:IV.7}\\
+KR-06 & Aplikasi umum SPBE, Satu Data Pertahanan, dan pemetaan ke domain Arsitektur SPBE & Tabel~\ref{tab:IV.17}, Tabel~\ref{tab:IV.19}\\
+KR-07 & Tujuan strategis, prinsip, kosakata, pola, dan posisi teknis & III.3, III.4.6, III.4.8\\
+KR-08 & Hubungan KR pada \textit{metamodel} serta kolom KR pada prinsip dan ABB & Tabel~\ref{tab:IV.7}, Tabel~\ref{tab:IV.27}, Tabel~\ref{tab:IV.29}\\
+KR-09 & Tingkat keterikatan, titik variasi, dan adopsi bertahap & Tabel~\ref{tab:IV.3}, Tabel~\ref{tab:IV.15}\\*
+KR-10 & Pemanfaatan DERA pada fase ADM dan kriteria kesesuaian & Tabel~\ref{tab:IV.1}; IV.2 hingga IV.8\\
+\end{longtable}
+\endgroup
+
+Tabel~\ref{tab:V.3} menunjukkan bahwa kesepuluh kebutuhan dipenuhi oleh minimal satu komponen DERA dan telah digunakan pada penerapan di Kemhan RI. Cakupan unsur C6ISR disajikan pada Tabel~\ref{tab:V.4}.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.236\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.418\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.284\linewidth}@{}}
+\caption{Cakupan Unsur C6ISR dalam DERA}\label{tab:V.4}\\
+\toprule
+\textbf{Unsur C6ISR} & \textbf{Kapabilitas CRM} & \textbf{Pola dan ABB}\\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{Unsur C6ISR} & \textbf{Kapabilitas CRM} & \textbf{Pola dan ABB}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\textit{Command} & Kebijakan dan strategi pertahanan; \textit{command} & P2; ABB-04\\*
+\textit{Control} & \textit{Control} & P2; ABB-04\\
+\textit{Communications} & Komunikasi pertahanan & P4; ABB-10\\
+\textit{Computers} & Manajemen data, analitik, layanan aplikasi bersama, serta komputasi dan pusat data & P3, P6; ABB-02, ABB-03, ABB-07 hingga ABB-09\\
+\textit{Cyber-Defense} & Pertahanan siber & P5; ABB-01, ABB-11, ABB-12\\
+\textit{Combat Systems} & Integrasi sistem tempur; pengadaan dan industri pertahanan & P1; ABB-06\\
+\textit{Intelligence} & \textit{Intelligence}; gambaran situasi bersama & P1, P2; ABB-04, ABB-05\\
+\textit{Surveillance} & \textit{Surveillance} & P1; ABB-05\\*
+\textit{Reconnaissance} & \textit{Reconnaissance} & P1; ABB-05\\
+\end{longtable}
+\endgroup
+
+Tabel~\ref{tab:V.4} menunjukkan bahwa kesembilan unsur C6ISR terwakili dalam CRM dan memiliki pola serta ABB yang mewujudkannya. Selain itu, DERA memuat kelima komponen arsitektur referensi, yaitu tujuan strategis (\ref{sec:III.3.1}), prinsip (\ref{sec:III.3.2}), kosakata (\ref{sec:III.3.3}), pola (\ref{sec:III.4.6}), dan posisi teknis (\ref{sec:III.4.8}). Dengan demikian, cakupan kebutuhan mencapai 10 dari 10 (100\%), cakupan unsur C6ISR 9 dari 9 (100\%), dan cakupan komponen arsitektur referensi 5 dari 5 (100\%).
+
+\subsection{\textit{Consistency}}
+\label{sec:V.2.2}
+
+\textit{Consistency} diperiksa dengan menerapkan aturan K1–K4 terhadap seluruh komponen DERA pada Bab III. Hasil pemeriksaan disajikan pada Tabel~\ref{tab:V.5}.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.109\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.375\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.109\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.314\linewidth}@{}}
+\caption{Hasil Pemeriksaan Aturan Konsistensi}\label{tab:V.5}\\
+\toprule
+\textbf{Aturan} & \textbf{Temuan} & \textbf{Jumlah} & \textbf{Perbaikan}\\
+\midrule
+\endfirsthead
+\multicolumn{4}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{Aturan} & \textbf{Temuan} & \textbf{Jumlah} & \textbf{Perbaikan}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\centering\arraybackslash K1 & Delapan jenis entitas \textit{metamodel} belum terdefinisi dalam kosakata, yaitu proses dan layanan bisnis, peran dan unit organisasi, entitas data, layanan aplikasi, komponen aplikasi, layanan teknologi, prinsip arsitektur, dan KR, serta tiga istilah inti, yaitu aliran nilai, area subjek data, dan gerbang lintas domain & \centering\arraybackslash 11 & Kesebelas istilah ditambahkan ke kosakata DERA (Tabel~\ref{tab:III.10})\\*
+\centering\arraybackslash K2 & Tiga hubungan digunakan tetapi belum didefinisikan, yaitu aliran nilai dengan kapabilitas (BRA), area subjek dengan entitas data (DRA), serta layanan teknologi dengan unsur C6ISR (TRA) & \centering\arraybackslash 3 & Ketiga hubungan ditambahkan ke \textit{metamodel} DERA (Tabel~\ref{tab:III.8})\\
+\centering\arraybackslash K3 & Kapabilitas manajemen perubahan dan talenta digital belum direalisasikan oleh layanan bisnis pada BRA & \centering\arraybackslash 1 & Layanan pengembangan organisasi dan talenta digital ditambahkan ke BRA (Tabel~\ref{tab:III.12})\\*
+\centering\arraybackslash K4 & Tidak ada pertentangan. Pola P5 membatasi pertukaran data, tetapi tidak bertentangan dengan prinsip \textit{Interoperability} karena pertukaran tetap dilakukan melalui gerbang lintas domain & \centering\arraybackslash 0 & \centering\arraybackslash –\\
+\end{longtable}
+\endgroup
+
+Tabel~\ref{tab:V.5} menunjukkan bahwa pemeriksaan awal menemukan 15 pelanggaran, terutama pada K1. Dengan demikian, sebelum perbaikan hanya satu dari empat aturan yang terpenuhi, yaitu K4 (25\%). Pelanggaran tersebut terjadi karena kosakata dan \textit{metamodel} belum mengikuti seluruh istilah dan hubungan yang digunakan pada model referensi. Setelah perbaikan dilakukan pada Tabel~\ref{tab:III.8}, \ref{tab:III.10}, dan III.12, pemeriksaan ulang tidak menemukan pelanggaran, sehingga keempat aturan terpenuhi (100\%).
+
+Konsistensi antardomain diperiksa dengan menelusuri setiap lapis CRM ke elemen keempat domain arsitektur, sebagaimana disajikan pada Tabel~\ref{tab:V.6}.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.160\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.188\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.182\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.171\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.175\linewidth}@{}}
+\caption{Keterkaitan Lapis CRM dengan Elemen Domain Arsitektur}\label{tab:V.6}\\
+\toprule
+\textbf{Lapis CRM} & \textbf{BRA} & \textbf{DRA} & \textbf{ARA} & \textbf{TRA}\\
+\midrule
+\endfirsthead
+\multicolumn{5}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{Lapis CRM} & \textbf{BRA} & \textbf{DRA} & \textbf{ARA} & \textbf{TRA}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Strategis dan tata kelola & Perumusan kebijakan dan strategi; tata kelola, pengawasan, dan kepatuhan & Kebijakan dan strategi & Aplikasi bersama (analitik dan dasbor) & Pusat data; layanan platform bersama\\*
+Operasional C6ISR & Pelaksanaan operasional dan dukungan; tata kelola komando & Operasi dan situasi; intelijen dan ISR; geospasial & Aplikasi operasional C6ISR & Jaringan operasional terklasifikasi; komputasi \textit{edge} dan platform; komunikasi strategis dan taktis\\
+Pengelolaan sumber daya & Pengembangan kekuatan dan kapabilitas; pengelolaan sumber daya dan aset & Personel; anggaran dan keuangan; materiil dan alutsista; industri pertahanan & Aplikasi administrasi pertahanan; aplikasi umum SPBE & Jaringan administrasi; pusat data\\
+Bersama & Layanan informasi pertahanan & Kamus data dan metadata seluruh area; informasi publik & Aplikasi bersama; layanan integrasi & Layanan platform bersama; pusat data dan pemulihan bencana; manajemen layanan TI\\*
+Pendukung & Tata kelola arsitektur; layanan pengembangan organisasi dan talenta digital & Infrastruktur dan TIK & Identitas tunggal; gerbang lintas domain & Komunikasi strategis dan taktis; keamanan teknologi\\
+\end{longtable}
+\endgroup
+
+Tabel~\ref{tab:V.6} menunjukkan bahwa setiap lapis CRM memiliki elemen pada keempat domain, sehingga tidak ada kapabilitas yang hanya berhenti pada satu domain. Klasifikasi informasi juga konsisten antardomain. Area data Rahasia diproses oleh aplikasi operasional C6ISR pada jaringan operasional terklasifikasi, area data Terbuka dan Terbatas diproses oleh aplikasi administrasi pada jaringan administrasi, sedangkan area data dengan rentang klasifikasi dipertukarkan melalui gerbang lintas domain sesuai pola P5.
+
+\subsection{Traceability}
+\label{sec:V.2.3}
+
+\textit{Traceability} diperiksa dalam dua bagian. Bagian A memeriksa arah maju, yaitu apakah setiap kebutuhan dipenuhi oleh minimal satu komponen DERA. Bagian B memeriksa arah mundur, yaitu apakah setiap komponen DERA memenuhi minimal satu kebutuhan. Matriks keterlacakan disajikan pada Tabel~\ref{tab:V.7}, dengan kolom 01 hingga 10 menunjukkan KR-01 hingga KR-10.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.255\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.043\linewidth}@{}}
+\caption{Matriks Keterlacakan Kebutuhan terhadap Komponen DERA}\label{tab:V.7}\\
+\toprule
+\textbf{Komponen DERA} & \textbf{01} & \textbf{02} & \textbf{03} & \textbf{04} & \textbf{05} & \textbf{06} & \textbf{07} & \textbf{08} & \textbf{09} & \textbf{10}\\
+\midrule
+\endfirsthead
+\multicolumn{11}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{Komponen DERA} & \textbf{01} & \textbf{02} & \textbf{03} & \textbf{04} & \textbf{05} & \textbf{06} & \textbf{07} & \textbf{08} & \textbf{09} & \textbf{10}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Tujuan strategis dan ruang lingkup & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash \\*
+Prinsip arsitektur & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √\\
+Kosakata & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash \\
+\textit{Metamodel} & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash √\\
+CRM & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash \\
+BRA & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash \\
+DRA & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash \\
+ARA & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash \\
+TRA & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash \\
+Pola lintas domain & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash \\
+Aspek lintas domain & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash \\
+Standar dan ABB & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √\\*
+Panduan penerapan & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash  & \centering\arraybackslash  & \centering\arraybackslash √ & \centering\arraybackslash √ & \centering\arraybackslash √\\
+\end{longtable}
+\endgroup
+
+Tabel~\ref{tab:V.7} menunjukkan bahwa pada Bagian A, kesepuluh kebutuhan dipenuhi oleh minimal empat komponen, sedangkan pada Bagian B arah mundur, ketiga belas komponen memenuhi minimal dua kebutuhan. KR-01 dan KR-03 dipenuhi oleh komponen terbanyak karena keterpaduan C6ISR dan keamanan melekat pada seluruh domain. Pada tingkat elemen, prinsip dan ABB memiliki kolom KR, sedangkan lapis CRM, pola, dan kategori TRA memiliki kolom unsur C6ISR. Elemen BRA, DRA, dan ARA masih ditelusuri pada tingkat komponen, sehingga penambahan kolom keterlacakan pada elemen tersebut menjadi bahan penyempurnaan DERA.
+
+Hasil evaluasi analitis secara keseluruhan dirangkum pada Tabel~\ref{tab:V.8}.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.183\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.358\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.206\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.160\linewidth}@{}}
+\caption{Ringkasan Hasil Evaluasi Analitis}\label{tab:V.8}\\
+\toprule
+\textbf{Kriteria} & \textbf{Ukuran} & \textbf{Hasil} & \textbf{Target}\\
+\midrule
+\endfirsthead
+\multicolumn{4}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{Kriteria} & \textbf{Ukuran} & \textbf{Hasil} & \textbf{Target}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\textit{Completeness} & Cakupan kebutuhan, unsur C6ISR, dan komponen arsitektur referensi & 10/10, 9/9, dan 5/5 (100\%) & \centering\arraybackslash 100\%\\*
+\textit{Consistency} & Persentase aturan K1–K4 yang terpenuhi & 25\% sebelum perbaikan (15 pelanggaran); 100\% setelah perbaikan & \centering\arraybackslash 100\%\\*
+\textit{Traceability} & Kebutuhan terlacak (Bagian A) dan komponen terlacak (Bagian B) & Bagian A 10/10; Bagian B 13/13 (100\%) & \centering\arraybackslash 100\%\\
+\end{longtable}
+\endgroup
+
+Tabel~\ref{tab:V.8} menunjukkan bahwa ketiga kriteria analitis mencapai target. \textit{Consistency} mencapai target setelah perbaikan, sehingga evaluasi analitis tidak hanya mengukur DERA, tetapi juga menyempurnakannya.

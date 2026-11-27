@@ -153,7 +153,7 @@ Identifikasi pemangku kepentingan dilakukan untuk mengenali pihak yang memengaru
 \centering\arraybackslash 4 & Pusat Siber dan Intelijen Teknologi Pertahanan & Keamanan dan intelijen siber pertahanan & Tinggi & Penerapan \textit{security by design} dan pusat operasi keamanan\\
 \centering\arraybackslash 5 & Ditjen Potensi Pertahanan & Potensi dan industri pertahanan & Tinggi & Data potensi pertahanan dan kolaborasi industri\\
 \centering\arraybackslash 6 & Ditjen Strategi Pertahanan dan Ditjen Perencanaan Pertahanan & Perumusan strategi dan perencanaan & Tinggi & Data perencanaan pertahanan yang terintegrasi\\
-\centering\arraybackslash 7 & Mabes TNI dan matra (TNI AD, AL, dan AU) & Operasi dan interoperabilitas lintas matra & Tinggi & Pertukaran data dan dukungan komando-kendali\\
+\centering\arraybackslash 7 & Mabes TNI dan matra (TNI AD\label{sk:AD}, AL\label{sk:AL}, dan AU\label{sk:AU}) & Operasi dan interoperabilitas lintas matra & Tinggi & Pertukaran data dan dukungan komando-kendali\\
 \centering\arraybackslash 8 & Badan Teknologi Pertahanan & Pengembangan teknologi pertahanan & Sedang & Standar teknologi dan dukungan inovasi\\
 \centering\arraybackslash 9 & Industri pertahanan nasional & Kolaborasi dan alih teknologi & Sedang & Standar terbuka dan interoperabilitas\\*
 \centering\arraybackslash 10 & Personel dan pengguna layanan & Kemudahan dan keandalan layanan & Sedang & Layanan digital yang berorientasi pengguna\\
@@ -165,7 +165,7 @@ Tabel~\ref{tab:IV.4} menunjukkan bahwa Menteri Pertahanan dan Kepala Pusat Data 
 \subsection{Governance}
 \label{sec:IV.2.4}
 
-Pusat Data dan Informasi telah berkedudukan langsung di bawah Menteri Pertahanan. Namun, mandatnya bersifat pengelolaan operasional (\textit{run-the-engine}) dan belum mencakup orkestrasi transformasi digital lintas satuan kerja dan matra. Oleh karena itu, tata kelola arsitektur menambahkan fungsi \textit{Chief Digital Transformation Officer} (CDTO) pada tingkat strategis di bawah Menteri Pertahanan. Karena Kemhan RI juga berkedudukan sebagai pemilik DERA, struktur tata kelola mencakup pengelolaan DERA dan EA Kemhan RI, sebagaimana disajikan pada Tabel~\ref{tab:IV.5}.
+Pusat Data dan Informasi telah berkedudukan langsung di bawah Menteri Pertahanan. Namun, mandatnya bersifat pengelolaan operasional (\textit{run-the-engine}) dan belum mencakup orkestrasi transformasi digital lintas satuan kerja dan matra. Oleh karena itu, tata kelola arsitektur menambahkan fungsi \textit{Chief Digital Transformation Officer} (CDTO\label{sk:CDTO}) pada tingkat strategis di bawah Menteri Pertahanan. Karena Kemhan RI juga berkedudukan sebagai pemilik DERA, struktur tata kelola mencakup pengelolaan DERA dan EA Kemhan RI, sebagaimana disajikan pada Tabel~\ref{tab:IV.5}.
 
 \begingroup\small\setstretch{1.0}
 \begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.201\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.382\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.355\linewidth}@{}}
@@ -355,7 +355,7 @@ Risiko transformasi diidentifikasi untuk mengantisipasi hambatan dalam mencapai 
 \endlastfoot
 \centering\arraybackslash 1 & Resistensi perubahan organisasi & Adopsi arsitektur berjalan lambat & Manajemen perubahan, dukungan pimpinan, dan fungsi CDTO\\*
 \centering\arraybackslash 2 & Keterbatasan SDM digital & Kualitas implementasi menurun & Pelatihan, rekrutmen, dan kerja sama kelembagaan\\
-\centering\arraybackslash 3 & Kompleksitas integrasi sistem \textit{legacy} & Keterlambatan dan pembengkakan biaya & Penerapan bertahap, layanan integrasi dan API, serta standar terbuka\\
+\centering\arraybackslash 3 & Kompleksitas integrasi sistem \textit{legacy} & Keterlambatan dan pembengkakan biaya & Penerapan bertahap, layanan integrasi dan API\label{sk:API}, serta standar terbuka\\
 \centering\arraybackslash 4 & Ancaman siber selama transisi & Kebocoran atau gangguan data & Penerapan \textit{security by design} dan penguatan fungsi keamanan siber\\
 \centering\arraybackslash 5 & Ketergantungan pada teknologi asing & Risiko terhadap kedaulatan data & Mengutamakan teknologi dalam negeri dan standar terbuka\\
 \centering\arraybackslash 6 & Keterbatasan anggaran dan waktu & Cakupan target tidak tercapai & Prioritas berbasis nilai dan \textit{roadmap} bertahap\\*
@@ -382,7 +382,7 @@ Gambar~\ref{fig:IV.3} menunjukkan bahwa infrastruktur terpadu menjadi fondasi, p
 \subsection{Statement of Architecture Work}
 \label{sec:IV.3.6}
 
-\textit{Statement of Architecture Work} (SoAW) merupakan kesepakatan kerja yang menetapkan acuan, ruang lingkup, tujuan, keluaran, pelaksana, dan batasan pekerjaan arsitektur. Ringkasan SoAW disajikan pada Tabel~\ref{tab:IV.11}.
+\textit{Statement of Architecture Work} (SoAW\label{sk:SoAW}) merupakan kesepakatan kerja yang menetapkan acuan, ruang lingkup, tujuan, keluaran, pelaksana, dan batasan pekerjaan arsitektur. Ringkasan SoAW disajikan pada Tabel~\ref{tab:IV.11}.
 
 \begingroup\small\setstretch{1.0}
 \begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.244\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.725\linewidth}@{}}
@@ -405,7 +405,7 @@ Tujuan & Tujuh tujuan strategis pada Tabel~\ref{tab:IV.7}\\
 Keluaran & Arsitektur \textit{baseline} dan target setiap domain, paket pekerjaan, \textit{roadmap}, serta rencana migrasi 2026–2030\\
 Pelaksana & \textit{Architecture Board}, \textit{Architecture Team}, dan tim keamanan siber (Tabel~\ref{tab:IV.5})\\
 Prinsip dan batasan & Sembilan prinsip DERA, kepatuhan terhadap SPBE, Satu Data, dan regulasi pertahanan, serta tidak menggunakan informasi rahasia militer\\
-Kriteria penerimaan & EA Kemhan RI mencapai tingkat kesesuaian minimal "sesuai" terhadap DERA (III.5.4)\\*
+Kriteria penerimaan & EA Kemhan RI mencapai tingkat kesesuaian minimal "sesuai" terhadap DERA (\ref{sec:III.5.4})\\*
 Jadwal & Bertahap dari Fase \textit{Preliminary} hingga Fase \textit{Migration Planning}\\
 \end{longtable}
 \endgroup
@@ -550,7 +550,7 @@ Berdasarkan Gambar~\ref{fig:IV.4} dan Tabel~\ref{tab:IV.13}, terdapat lima fungs
 \item pengkajian dan adopsi teknologi baru, seperti kecerdasan buatan dan komputasi awan.
 \end{enumerate}
 
-Kelima fungsi tersebut diampu oleh unit \textit{Digital Transformation Officer} (DTO) yang dipimpin CDTO dan bertanggung jawab langsung kepada Menteri Pertahanan. Kedudukan ini memberikan kewenangan lintas eselon I dan lintas matra, memisahkan DTO dari fungsi operasional Pusat Data dan Informasi, serta memungkinkan CDTO memimpin \textit{Architecture Board}. Struktur organisasi target disajikan pada Gambar~\ref{fig:IV.7}.
+Kelima fungsi tersebut diampu oleh unit \textit{Digital Transformation Officer} (DTO\label{sk:DTO}) yang dipimpin CDTO dan bertanggung jawab langsung kepada Menteri Pertahanan. Kedudukan ini memberikan kewenangan lintas eselon I dan lintas matra, memisahkan DTO dari fungsi operasional Pusat Data dan Informasi, serta memungkinkan CDTO memimpin \textit{Architecture Board}. Struktur organisasi target disajikan pada Gambar~\ref{fig:IV.7}.
 
 \begin{figure}[htbp]
 \centering
@@ -804,7 +804,7 @@ Hukum dan pengawasan & Administrasi pertahanan & Dipertahankan dan diintegrasika
 Informasi publik & Administrasi pertahanan & Dipertahankan dan diintegrasikan & \centering\arraybackslash 2\\
 Potensi pertahanan & Administrasi pertahanan & Dipertahankan dan diintegrasikan & \centering\arraybackslash 4\\
 Sarana pertahanan & Administrasi pertahanan & Dipertahankan dan diintegrasikan & \centering\arraybackslash 1\\
-Pendidikan dan pelatihan & Administrasi pertahanan & Digabungkan menjadi platform pembelajaran (LMS) terpadu & \centering\arraybackslash 27\\
+Pendidikan dan pelatihan & Administrasi pertahanan & Digabungkan menjadi platform pembelajaran (LMS\label{sk:LMS}) terpadu & \centering\arraybackslash 27\\
 Kesehatan dan rehabilitasi & Administrasi pertahanan & Dipertahankan dan diintegrasikan & \centering\arraybackslash 4\\
 Data strategis dan geospasial & Aplikasi bersama & Dipertahankan sebagai sumber Portal Satu Data Pertahanan & \centering\arraybackslash 8\\
 Keamanan siber dan infrastruktur TIK & Aplikasi bersama dan layanan teknologi & Dipertahankan; pemantauannya dipadukan dalam pusat operasi keamanan & \centering\arraybackslash 16\\*
@@ -835,9 +835,9 @@ Arsitektur aplikasi target terdiri atas aplikasi hasil rasionalisasi dan kompone
 \endlastfoot
 Platform Integrasi Pertahanan (API \textit{gateway} dan pertukaran data) & Layanan integrasi & ABB-02\\*
 Portal Satu Data Pertahanan & Aplikasi bersama & ABB-03\\
-Layanan SSO/IAM tingkat \textit{enterprise} & Aplikasi bersama & ABB-01\\
+Layanan SSO/IAM\label{sk:IAM} tingkat \textit{enterprise} & Aplikasi bersama & ABB-01\\
 Dasbor eksekutif dan analitik & Aplikasi bersama & ABB-07\\
-Tampilan Pemantauan Terpusat (TPT) tingkat strategis & Aplikasi operasional C6ISR & ABB-04\\*
+Tampilan Pemantauan Terpusat (TPT\label{sk:TPT}) tingkat strategis & Aplikasi operasional C6ISR & ABB-04\\*
 Layanan kepegawaian dan LMS terpadu & Administrasi pertahanan & \centering\arraybackslash –\\
 \end{longtable}
 \endgroup
@@ -949,7 +949,7 @@ Gambar~\ref{fig:IV.13} menunjukkan bahwa arsitektur teknologi target terdiri ata
 \item Domain administrasi, yang terdiri atas lapisan presentasi, integrasi, komputasi, penyimpanan, dan jaringan administrasi yang tersegmentasi dan terenkripsi.
 \item Domain operasional terklasifikasi (ABB-11), yang menghubungkan TPT tingkat strategis dengan Mabes TNI dan matra melalui komunikasi berlapis PACE (ABB-10).
 \item Gerbang lintas domain (ABB-11), yang mengendalikan pertukaran data antara kedua domain sesuai pola P5.
-\item Pusat data utama di Pusat Data dan Informasi, Pondok Labu, dan pusat pemulihan bencana yang diusulkan berlokasi di Kemhan IKN (ABB-08). Keduanya beroperasi aktif-aktif dengan replikasi data, sehingga titik tunggal kegagalan dapat dihilangkan.
+\item Pusat data utama di Pusat Data dan Informasi, Pondok Labu, dan pusat pemulihan bencana yang diusulkan berlokasi di Kemhan IKN\label{sk:IKN} (ABB-08). Keduanya beroperasi aktif-aktif dengan replikasi data, sehingga titik tunggal kegagalan dapat dihilangkan.
 \item Keamanan siber berlapis yang membentang pada kedua domain, dengan pusat operasi keamanan (ABB-12) sebagai pusat pemantauan.
 \end{enumerate}
 
@@ -974,10 +974,10 @@ Arsitektur keamanan mengacu pada Permenhan Nomor 34 Tahun 2025 \cite{Permenhan34
 \endhead
 \bottomrule
 \endlastfoot
-Identifikasi & \textit{Vulnerability Assessment and Penetration Test} (VAPT) & Mengidentifikasi kerentanan dan risiko keamanan sistem\\*
-Proteksi & \textit{Firewall}, segmentasi jaringan, pemisahan domain klasifikasi, gerbang lintas domain, persandian, \textit{endpoint protection}, dan IDPS & Melindungi jaringan, data, dan perangkat serta mencegah serangan\\
-Deteksi & \textit{Cyber Threat Intelligence} (CTI) dan SIEM pada pusat operasi keamanan & Mendeteksi anomali dan peristiwa keamanan siber\\*
-Penanggulangan dan pemulihan & \textit{Digital forensic}, SOAR, CSIRT, sistem cadangan, dan pusat pemulihan bencana & Menanggulangi insiden siber serta memulihkan layanan\\
+Identifikasi & \textit{Vulnerability Assessment and Penetration Test} (VAPT\label{sk:VAPT}) & Mengidentifikasi kerentanan dan risiko keamanan sistem\\*
+Proteksi & \textit{Firewall}, segmentasi jaringan, pemisahan domain klasifikasi, gerbang lintas domain, persandian, \textit{endpoint protection}, dan IDPS\label{sk:IDPS} & Melindungi jaringan, data, dan perangkat serta mencegah serangan\\
+Deteksi & \textit{Cyber Threat Intelligence} (CTI\label{sk:CTI}) dan SIEM\label{sk:SIEM} pada pusat operasi keamanan & Mendeteksi anomali dan peristiwa keamanan siber\\*
+Penanggulangan dan pemulihan & \textit{Digital forensic}, SOAR\label{sk:SOAR}, CSIRT\label{sk:CSIRT}, sistem cadangan, dan pusat pemulihan bencana & Menanggulangi insiden siber serta memulihkan layanan\\
 \end{longtable}
 \endgroup
 

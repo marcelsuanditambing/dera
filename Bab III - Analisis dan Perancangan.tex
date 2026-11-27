@@ -413,7 +413,7 @@ Model referensi DERA menerjemahkan fondasi DERA ke dalam kapabilitas, empat doma
 \subsection{Capability Reference Model Berbasis C6ISR}
 \label{sec:III.4.1}
 
-\textit{Capability Reference Model} (CRM) memetakan kapabilitas yang dibutuhkan organisasi pertahanan, tanpa bergantung pada unit atau sistem yang melaksanakannya. CRM menggabungkan kapabilitas operasional C6ISR dengan kapabilitas strategis dan pengelolaan sumber daya, karena kementerian pertahanan menjalankan fungsi kebijakan, pengadaan, dan pengelolaan sumber daya nasional \cite{UU3Tahun2002}. Struktur CRM ditunjukkan pada Gambar~\ref{fig:III.3}.
+\textit{Capability Reference Model} (CRM\label{sk:CRM}) memetakan kapabilitas yang dibutuhkan organisasi pertahanan, tanpa bergantung pada unit atau sistem yang melaksanakannya. CRM menggabungkan kapabilitas operasional C6ISR dengan kapabilitas strategis dan pengelolaan sumber daya, karena kementerian pertahanan menjalankan fungsi kebijakan, pengadaan, dan pengelolaan sumber daya nasional \cite{UU3Tahun2002}. Struktur CRM ditunjukkan pada Gambar~\ref{fig:III.3}.
 
 \begin{figure}[htbp]
 \centering
@@ -451,7 +451,7 @@ Tabel~\ref{tab:III.11} menunjukkan bahwa kesembilan unsur C6ISR terwakili dalam 
 \subsection{Business Reference Architecture}
 \label{sec:III.4.2}
 
-\textit{Business Reference Architecture} (BRA) menyediakan acuan entitas, aliran nilai, layanan bisnis, dan tata kelola yang digunakan arsitektur turunan untuk menyusun arsitektur bisnis. Elemen BRA disajikan pada Tabel~\ref{tab:III.12}.
+\textit{Business Reference Architecture} (BRA\label{sk:BRA}) menyediakan acuan entitas, aliran nilai, layanan bisnis, dan tata kelola yang digunakan arsitektur turunan untuk menyusun arsitektur bisnis. Elemen BRA disajikan pada Tabel~\ref{tab:III.12}.
 
 \begingroup\small\setstretch{1.0}
 \begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.257\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.712\linewidth}@{}}
@@ -480,7 +480,7 @@ Tabel~\ref{tab:III.12} menunjukkan bahwa BRA memisahkan peran penetap kebijakan 
 \subsection{Data Reference Architecture}
 \label{sec:III.4.3}
 
-\textit{Data Reference Architecture} (DRA) menyediakan acuan area subjek data, klasifikasi, dan tata kelola data. Area subjek data pertahanan disajikan pada Tabel~\ref{tab:III.13}.
+\textit{Data Reference Architecture} (DRA\label{sk:DRA}) menyediakan acuan area subjek data, klasifikasi, dan tata kelola data. Area subjek data pertahanan disajikan pada Tabel~\ref{tab:III.13}.
 
 \begingroup\small\setstretch{1.0}
 \begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.248\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.418\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.272\linewidth}@{}}
@@ -514,7 +514,7 @@ Tabel~\ref{tab:III.13} menunjukkan klasifikasi acuan setiap area subjek berdasar
 \subsection{Application Reference Architecture}
 \label{sec:III.4.4}
 
-\textit{Application Reference Architecture} (ARA) mengelompokkan aplikasi berdasarkan fungsi dan domain klasifikasinya, sebagaimana disajikan pada Tabel~\ref{tab:III.14}.
+\textit{Application Reference Architecture} (ARA\label{sk:ARA}) mengelompokkan aplikasi berdasarkan fungsi dan domain klasifikasinya, sebagaimana disajikan pada Tabel~\ref{tab:III.14}.
 
 \begingroup\small\setstretch{1.0}
 \begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.260\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.453\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.225\linewidth}@{}}
@@ -543,7 +543,7 @@ Tabel~\ref{tab:III.14} menunjukkan bahwa aplikasi umum SPBE digunakan sesuai ket
 \subsection{Technology Reference Architecture}
 \label{sec:III.4.5}
 
-\textit{Technology Reference Architecture} (TRA) menyediakan acuan kategori layanan teknologi yang menopang aplikasi dan data, sebagaimana disajikan pada Tabel~\ref{tab:III.15}.
+\textit{Technology Reference Architecture} (TRA\label{sk:TRA}) menyediakan acuan kategori layanan teknologi yang menopang aplikasi dan data, sebagaimana disajikan pada Tabel~\ref{tab:III.15}.
 
 \begingroup\small\setstretch{1.0}
 \begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.272\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.441\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.225\linewidth}@{}}
@@ -603,7 +603,7 @@ Gambar~\ref{fig:III.4} menunjukkan bahwa seluruh unsur C6ISR berada pada domain 
 P1 Siklus C6ISR tertutup & Data sensor, keputusan, dan penindakan terputus antarsistem. & Data ISR dialirkan melalui komunikasi dan komputasi ke komando-kendali, perintah diteruskan ke unsur penindak, dan hasilnya menjadi umpan balik. & Seluruh unsur\\*
 P2 Komando dan kendali berjenjang & Setiap tingkat komando memiliki gambaran situasi yang berbeda. & Tingkat strategis, operasional, dan pelaksana menggunakan gambaran situasi yang sama sesuai hak aksesnya. & \textit{Command}, \textit{Control}\\
 P3 Komputasi terdistribusi & Pengolahan terpusat gagal ketika koneksi terputus. & Komputasi pada tingkat platform, \textit{edge}, dan pusat yang dapat beroperasi mandiri dalam waktu terbatas. & \textit{Computers}\\
-P4 Komunikasi berlapis & Gangguan pada satu media memutus komunikasi. & Skema PACE, yaitu jalur \textit{primary}, \textit{alternate}, \textit{contingency}, dan \textit{emergency} yang digunakan berurutan ketika jalur sebelumnya tidak tersedia \cite{CISAPACE2023}. & \textit{Communications}\\
+P4 Komunikasi berlapis & Gangguan pada satu media memutus komunikasi. & Skema PACE\label{sk:PACE}, yaitu jalur \textit{primary}, \textit{alternate}, \textit{contingency}, dan \textit{emergency} yang digunakan berurutan ketika jalur sebelumnya tidak tersedia \cite{CISAPACE2023}. & \textit{Communications}\\
 P5 Pemisahan domain klasifikasi & Informasi Rahasia bercampur dengan informasi administrasi. & Jaringan operasional terklasifikasi terpisah, dengan pertukaran melalui gerbang lintas domain dan pertahanan siber pada seluruh lapisan. & \textit{Cyber-Defense}\\*
 P6 Pertukaran data lintas entitas & Data terkotak per aplikasi dan per organisasi. & Layanan pertukaran data dengan kamus data bersama, portal dan katalog data, serta antarmuka standar. & \textit{Computers}, \textit{Communications}\\
 \end{longtable}
@@ -687,7 +687,7 @@ Arsitektur & Pengembangan dan pemodelan arsitektur turunan & TOGAF \cite{TOGAF20
 Data & Kamus data, metadata, dan klasifikasi data & Satu Data Indonesia \cite{Perpres39Tahun2019}, Satu Data Pertahanan \cite{Permenhan1Tahun2023}\\
 Keamanan & Sistem manajemen keamanan informasi dan pertahanan siber & ISO/IEC 27001 \cite{ISO27001}, Pedoman Pertahanan Siber \cite{Permenhan82Tahun2014}\\
 Pemerintahan digital & Keselarasan arsitektur dan aplikasi umum & Arsitektur SPBE Nasional \cite{Perpres132Tahun2022}\\*
-Interoperabilitas pertahanan & Standar pertukaran data dan antarmuka yang ditetapkan bersama antarorganisasi pertahanan & NISP sebagai pembanding \cite{NATONISP}\\
+Interoperabilitas pertahanan & Standar pertukaran data dan antarmuka yang ditetapkan bersama antarorganisasi pertahanan & NISP\label{sk:NISP} sebagai pembanding \cite{NATONISP}\\
 \end{longtable}
 \endgroup
 
