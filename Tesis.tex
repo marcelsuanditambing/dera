@@ -102,6 +102,7 @@
 \usepackage[title,titletoc]{appendix} % for appendix management
 \usepackage{csquotes} % for context-sensitive quotation facilities
 \usepackage{etoolbox}
+\usepackage{pdflscape} % halaman landscape
 \usepackage[hidelinks]{hyperref} % for hyperlinks
 
 \setmainfont{Times New Roman} % set main font to Times New Roman
@@ -111,10 +112,20 @@
 \usepackage[
     backend=biber,
     authordate,
+    ibidtracker=false, % gaya author-date tidak memakai "ibid."
     language=english,
     autolang=other
 ]{biblatex-chicago}
 \addbibresource{daftar-pustaka.bib}
+
+% --- Tata letak: cegah baris melampaui margin kanan ---
+\setlength{\emergencystretch}{3em}
+% URL di daftar pustaka boleh dipotong di antara huruf (hindari spasi renggang)
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+% Daftar pustaka rata kiri agar URL panjang tidak membuat spasi renggang
+\appto{\bibsetup}{\raggedright}
 
 % --- Terjemahan istilah daftar pustaka ke Bahasa Indonesia ---
 \DefineBibliographyStrings{english}{
@@ -133,6 +144,19 @@
   number       = {no.},
   urlseen      = {diakses pada},
   url          = {tautan},
+  nodate       = {t.t.},
+  january      = {Januari},
+  february     = {Februari},
+  march        = {Maret},
+  april        = {April},
+  may          = {Mei},
+  june         = {Juni},
+  july         = {Juli},
+  august       = {Agustus},
+  september    = {September},
+  october      = {Oktober},
+  november     = {November},
+  december     = {Desember},
 }
 
 % --- ubah format sitasi menjadi (Author Year) ---
@@ -295,6 +319,8 @@
   objectset=centering, 
   captionskip=6pt
 } 
+% --- Tabel hasil konversi docx: isi \small, judul tetap ukuran normal ---
+\captionsetup[table]{justification=raggedright,singlelinecheck=false,font=normalsize}
 % --- Listing ---
 \captionsetup[lstlisting]{
   labelsep=space, 
@@ -351,7 +377,7 @@
 \input{3 Pernyataan Orisinalitas.tex}
 \input{3a Pernyataan Penggunaan AI.tex}
 \input{4 Abstrak.tex}
-\input{5 Kata Pengantar.tex}
+% \input{5 Kata Pengantar.tex} % Kata Pengantar di docx masih kosong
 % ==========================================
 % --- Atur margin halaman untuk double-sided format (bolak-balik) ---
 % --- Comment baris di bawah ini jika ingin tetap menggunakan single-sided format ---
@@ -371,11 +397,11 @@
 \input{6 Daftar Isi.tex}
 \input{7 Daftar Gambar.tex}
 \input{8 Daftar Tabel.tex}
-\input{9 Daftar Persamaan.tex}
-\input{10 Daftar Algoritma.tex}
+% \input{9 Daftar Persamaan.tex} % docx tidak memuat persamaan
+% \input{10 Daftar Algoritma.tex} % tidak dipakai
 %\input{11 Daftar Listing.tex}
-\input{12 Daftar Singkatan.tex}
-\input{13 Daftar Simbol.tex}
+% \input{12 Daftar Singkatan.tex} % disusun pada Tahap 3
+% \input{13 Daftar Simbol.tex} % docx tidak memuat simbol/persamaan
 
 % ==========================================
 % BAGIAN UTAMA DOKUMEN
@@ -389,18 +415,13 @@
 % ==========================================
 
 \input{Bab I - Pendahuluan.tex}
-
-\input{Bab II - Studi.tex}
-
-
-\input{Bab III - Analisis dan Desain.tex}
-
-
-%\input{Bab IV - Implementasi.tex}
-
-\input{Bab VI - Evaluasi.tex}
-
-\input{Bab VII - Penutup.tex}
+\input{Bab II - Tinjauan Pustaka.tex}
+% --- Tahap 2 ---
+% \input{Bab III - Analisis dan Perancangan.tex}
+% \input{Bab IV - Implementasi.tex}
+% --- Tahap 3 ---
+% \input{Bab V - Evaluasi.tex}
+% Bab VI (Kesimpulan dan Saran) belum ada di docx
 
 
 % ==========================================
@@ -423,8 +444,8 @@
 \addtocontents{toc}{\protect\renewcommand{\protect\cftchappresnum}{}}
 \addtocontents{toc}{\protect\settowidth{\protect\cftchapnumwidth}{A\quad}}
 
-\input{Lampiran-A.tex}
-\input{Lampiran-B.tex}
+% \input{Lampiran-A.tex} % lampiran instrumen evaluasi menyusul
+% \input{Lampiran-B.tex}
 \end{appendices}
 \backmatter
 

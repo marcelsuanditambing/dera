@@ -1,129 +1,194 @@
-\cleardoublepage % memastikan bab baru dimulai di halaman ganjil (kanan)
+% ==========================================
+% BAB I PENDAHULUAN
+% ==========================================
+\cleardoublepage
 \chapter{PENDAHULUAN}
-\label{chap:pendahuluan}
-% --- Latar Belakang ---
+\label{chap:I}
+
 \section{Latar Belakang}
-Subbab ini menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tesis. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
-\begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di fasilitas kesehatan daerah pedesaan saat ini dan masalah yang dihadapi, berdasarkan hasil survei atau wawancara dengan pihak terkait.
-\item	Urgensi atau pentingnya penyelesaian masalah tersebut, misalnya dampak negatif yang ditimbulkan jika masalah tersebut tidak diselesaikan.
-\item	Berbagai solusi yang telah diterapkan maupun solusi yang memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut, berdasarkan hasil studi literatur, wawancara dengan pihak terkait, atau kunjungan lapangan.
-\item   Kelemahan atau kekurangan dari solusi yang telah diterapkan atau yang memungkinkan untuk diterapkan tersebut, yang menjadi dasar pemikiran dalam merumuskan masalah tesis.
-\end{enumerate}
-Penulisan latar belakang masalah yang baik akan mengantarkan pembaca kepada pemahaman yang jelas tentang topik yang akan dibahas, 
-sehingga pembaca dapat mengikuti pembahasan pada bab atau subbab berikutnya dengan baik. Oleh karena itu, 
-penulis diharapkan melakukan investigasi yang mendalam untuk mengumpulkan fakta-fakta yang relevan dengan topik yang dibahas, 
-baik melalui studi literatur, wawancara dengan pihak terkait, maupun kunjungan lapangan. Hasil studi ini dijelaskan secara \emph{ringkas} di dalam subbab ini.
-Penjelasan hasil studi literatur yang komprehensif dapat dijabarkan di Bab II secara sistematis.
+\label{sec:I.1}
 
-Dalam menulis latar belakang, hindari penulisan yang bersifat terlalu umum atau terlalu luas cakupannya sehingga sulit untuk dihubungkan dengan topik yang dibahas dalam tesis,
-seperti:
-\begin{enumerate}
-    \item "Pentingnya teknologi informasi dalam kehidupan manusia."
-    \item "Perkembangan pesat teknologi \emph{artificial intelligence} di era digital."
-    \item "Tantangan dalam pengelolaan data besar (\emph{big data}) di berbagai sektor industri."
-    \item "Peran teknologi informasi dalam meningkatkan kualitas layanan kesehatan."
-\end{enumerate}
-Penulisan yang terlalu umum atau luas cakupannya akan menyulitkan penulis dalam merumuskan masalah, tujuan, metodologi, dan evaluasi tesis.
+Kementerian Pertahanan Republik Indonesia (Kemhan RI) menyelenggarakan urusan pemerintahan di bidang pertahanan \cite{Permenhan13Tahun2026}. Menteri Pertahanan menetapkan kebijakan penyelenggaraan pertahanan negara, termasuk kebijakan pengadaan, pengelolaan sumber daya nasional, serta pembinaan teknologi dan industri pertahanan \cite{UU3Tahun2002}. Kebijakan dan strategi pertahanan serta dukungan administrasi yang berkaitan dengan perencanaan strategis TNI juga berada dalam koordinasi Kemhan RI \cite{UU3Tahun2025}. Dengan kedudukan tersebut, Kemhan RI berperan sebagai penyusun kebijakan dan standar yang menjadi acuan penyelenggaraan pertahanan, termasuk bagi TNI.
 
-Jika ada referensi yang digunakan dalam penulisan latar belakang, cantumkan referensi tersebut dengan benar menggunakan \texttt{biblatex} sesuai dengan contoh penulisan kutipan dan daftar pustaka yang telah disediakan dalam template ini.
-Sebagai contoh, pada paragraf berikut ini terdapat kutipan dari dua referensi yang berbeda \autocite{laudon2020, pressman2019}. 
-Ada dua format penulisan sitasi yang dapat digunakan, yaitu format naratif dan format parentetik.
-Contoh penulisan kutipan dengan format naratif adalah sebagai berikut:
-\begin{displayquote}
-Menurut \textcite{laudon2020}, sistem informasi adalah kombinasi dari teknologi informasi dan aktivitas orang yang menggunakan teknologi tersebut untuk mendukung operasi dan manajemen organisasi.
-\end{displayquote}
-Contoh penulisan kutipan dengan format parentetik adalah sebagai berikut:
-\begin{displayquote}
-    Sistem informasi merupakan kombinasi dari teknologi informasi dan aktivitas orang yang menggunakan teknologi tersebut untuk mendukung operasi dan manajemen organisasi \autocite{laudon2020}.
-\end{displayquote}
-% --- Rumusan Masalah ---
+Peran tersebut semakin penting karena ancaman yang dihadapi bersifat multidimensi, mulai dari ancaman militer konvensional hingga ancaman siber. Keunggulan pertahanan tidak lagi semata ditentukan oleh jumlah alutsista dan personel, tetapi juga oleh kemampuan mengintegrasikan sistem dan mengambil keputusan secara cepat berbasis data \cite{USDoD2019,Koch2015,USDoD2022}. Di tingkat nasional, Pemerintah mendorong ekosistem digital yang terintegrasi melalui Sistem Pemerintahan Berbasis Elektronik (SPBE) \cite{Perpres95Tahun2018}, percepatan transformasi digital \cite{Perpres82Tahun2023}, dan RPJPN 2025–2045 \cite{UU59Tahun2024}. Oleh karena itu, transformasi digital Kemhan RI harus memenuhi dua tuntutan sekaligus, yaitu kewajiban Arsitektur SPBE yang berorientasi pada layanan administrasi pemerintahan dan kebutuhan kapabilitas operasional pertahanan, terutama keterpaduan komando dan kendali lintas matra.
+
+Dalam praktiknya, sistem di lingkungan Kemhan RI masih berkembang secara terpisah (\textit{silo}) pada empat lapisan. Pada lapisan bisnis dan tata kelola, unit yang bertugas mengelola data dan sistem informasi \cite{Permenhan30Tahun2025} berfokus menjalankan sistem yang sudah ada (\textit{run-the-engine}), sehingga belum ada fungsi yang mengorkestrasi perubahan lintas organisasi. Pada lapisan data dan aplikasi, inventarisasi tahun 2025 mencatat 247 aplikasi, terdiri atas 176 aplikasi umum dan 71 aplikasi khusus yang sebagian memiliki fungsi serupa, sedangkan data masih terkotak per aplikasi meskipun kebijakan Satu Data Pertahanan telah ditetapkan \cite{Permenhan1Tahun2023}. Pada lapisan teknologi, seluruh layanan bertumpu pada satu pusat data tanpa \textit{Disaster Recovery Center} dengan pengamanan yang masih parsial, padahal ancaman siber terhadap data pertahanan terus meningkat \cite{Permenhan82Tahun2014}. Pada lapisan operasional, komando dan kendali masih dikembangkan per matra, sehingga keterpaduan unsur ISR, komando-kendali, dan unsur penindak belum terbentuk. Indeks SPBE Kemhan RI sebesar 3,43 dengan predikat Baik pada tahun 2023 \cite{Pusdatin2024} menunjukkan bahwa tata kelola SPBE telah berjalan, tetapi indeks tersebut tidak mengukur keterpaduan kapabilitas operasional pertahanan.
+
+Permasalahan tersebut berakar pada belum adanya arsitektur yang menjadi acuan bersama dalam membangun sistem pertahanan. \textit{Enterprise Architecture} (EA) dapat menjawab sebagian permasalahan karena menyelaraskan strategi organisasi dengan proses bisnis, data, aplikasi, dan teknologi \cite{Syamfithriani2024}, termasuk dalam transformasi organisasi militer \cite{Mattila2022}. Namun, EA yang disusun secara terpisah oleh Kemhan RI, Mabes TNI, dan setiap matra berisiko memindahkan \textit{silo} dari tingkat sistem ke tingkat arsitektur. Oleh karena itu, sektor pertahanan membutuhkan acuan yang berada di atas EA setiap organisasi, yaitu arsitektur referensi (\textit{reference architecture}). Arsitektur referensi merupakan sumber otoritatif yang mengarahkan dan membatasi pengembangan berbagai arsitektur melalui tujuan strategis, prinsip, posisi teknis, pola, dan kosakata bersama \cite{DoDCIO2010RA}. Mekanisme ini telah diterapkan dalam pemerintahan Indonesia, yaitu Arsitektur SPBE Nasional yang memuat Referensi Arsitektur SPBE Nasional sebagai acuan penyusunan Arsitektur SPBE instansi \cite{Perpres95Tahun2018,Perpres132Tahun2022}. Akan tetapi, referensi tersebut berorientasi pada layanan pemerintahan dan belum menjangkau kapabilitas operasional pertahanan.
+
+Arsitektur dan model referensi pertahanan yang tersedia juga belum dapat diadopsi secara langsung. \textit{Framework} EA pertahanan, yaitu DoDAF \cite{DoDAF2010v202}, MODAF \cite{Weilkiens2022}, dan NAF \cite{NAFv41}, berakar pada C4ISR \textit{Architecture Framework} \cite{C4ISRAWG1998}, sehingga kuat dalam aspek komando, kendali, dan interoperabilitas. Namun, \textit{framework} tersebut terutama menetapkan cara mendeskripsikan arsitektur, bukan muatan acuan yang dapat diturunkan menjadi arsitektur organisasi. NATO C3 \textit{Taxonomy} menyediakan model konsep dan hubungan bagi kapabilitas C3 \cite{NATOC3Taxonomy}, tetapi disusun untuk mendukung perencanaan kapabilitas NATO. Sementara itu, TOGAF unggul sebagai metode pengembangan arsitektur yang bertahap dan iteratif melalui \textit{Architecture Development Method} (ADM) dan menyediakan \textit{Enterprise Continuum} untuk menempatkan arsitektur referensi sektoral, tetapi bersifat generik dan tidak menyediakan muatan pertahanan \cite{TOGAF2022}. Sejauh penelusuran awal penelitian ini, belum ditemukan arsitektur referensi yang memuat kapabilitas operasional pertahanan, selaras dengan regulasi dan Arsitektur SPBE Indonesia, serta dapat diterapkan melalui metode EA yang baku.
+
+Muatan pertahanan bagi arsitektur referensi tersebut dapat dirumuskan dari konsep C6ISR, yaitu \textit{Command, Control, Communications, Computers, Cyber-Defense, Combat Systems, Intelligence, Surveillance, and Reconnaissance}. C6ISR merupakan perkembangan konsep komando dan kendali melalui C4ISR dan C5ISR \cite{Petrovski2023,Todorovic2025}. Unsur \textit{cyber-defense} ditambahkan setelah ruang siber diakui sebagai domain operasi \cite{NATO2016Warsaw}, sedangkan unsur \textit{combat systems} melengkapi siklus operasi dari pengindraan dan pengambilan keputusan hingga penindakan \cite{Petrovski2023}. Di Indonesia, konsep serupa telah dikenal sebagai K4IPP \cite{Permenhan8Tahun2016}, dan istilah C6ISR telah digunakan dalam kajian di lingkungan Kemhan RI \cite{Dwipratama2023}. Namun, C6ISR masih berupa konsep domain dan belum dirumuskan sebagai arsitektur referensi yang mendefinisikan prinsip, kapabilitas, komponen, hubungan antarkomponen, standar, dan panduan penerapan.
+
+Berdasarkan uraian tersebut, penelitian ini merancang arsitektur referensi pertahanan berbasis C6ISR, yang selanjutnya disebut \textit{Defense Enterprise Reference Architecture} (DERA). DERA menerjemahkan konsep C6ISR ke dalam domain bisnis, data, aplikasi, dan teknologi, serta dilengkapi panduan penerapan menggunakan TOGAF ADM tanpa mengubah struktur fasenya. DERA kemudian diterapkan pada Kemhan RI untuk menghasilkan EA dan \textit{roadmap} transformasi digital 2026–2030, sebagai demonstrasi bahwa arsitektur referensi tersebut dapat digunakan dalam praktik.
+
 \section{Rumusan Masalah}
-Subbab ini berisi masalah utama yang dibahas dalam tesis. Perumusan masalah yang baik memiliki struktur sebagai berikut:
-\begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
-\end{enumerate}
-Hindari penulisan masalah yang terlalu umum atau terlalu luas cakupannya sehingga sulit untuk diselesaikan dalam jangka waktu pelaksanaan tesis, 
-seperti:
-\begin{enumerate}
-    \item "Bagaimana cara meningkatkan kualitas layanan kesehatan di Indonesia?"
-    \item "Bagaimana cara mengoptimalkan penggunaan energi di perkotaan?"
-    \item "Bagaimana cara mengurangi kemacetan lalu lintas di kota besar?"
-    \item "Bagaimana cara membangun sistem irigasi sawah menggunakan \emph{AI}?"
-\end{enumerate}
-Rumusan masalah yang baik dan spesifik akan memudahkan penulis dalam menentukan tujuan, metodologi, dan evaluasi tesis.
+\label{sec:I.2}
 
-Selain itu, hindari menuliskan pertanyaan yang merupakan sebuah keniscayaan yang harus dijawab atau dikerjakan 
-dalam pelaksanaan tesis, seperti:
-\begin{enumerate}
-    \item "Bagaimana cara melakukan analisis kebutuhan sistem informasi rumah sakit?"
-    \item "Bagaimana cara merancang basis data untuk aplikasi X?"
-    \item "Bagaimana cara mengimplementasikan \textit{large language model} untuk deteksi penyakit Y?"
-    \item "Bagaimana cara menguji sistem penyiraman tanaman berbasis IoT yang akan dibuat?"
-\end{enumerate}
-Kegiatan analisis, perancangan, implementasi, dan pengujian merupakan tahapan yang harus dilakukan dalam pelaksanaan tesis,
-sehingga pertanyaan-pertanyaan tersebut tidak perlu dimasukkan ke dalam rumusan masalah.
+Berdasarkan latar belakang tersebut, permasalahan utama penelitian ini adalah belum tersedianya arsitektur referensi pertahanan yang memuat kapabilitas operasional pertahanan, selaras dengan regulasi dan Arsitektur SPBE Indonesia, serta dapat diterapkan melalui metode EA yang baku. Permasalahan tersebut dirumuskan dalam tiga pertanyaan penelitian (\textit{research question}, RQ) berikut.
 
-% --- Tujuan ---
-\section{Tujuan}
-Tuliskan \textbf{tujuan utama} dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tesis. 
-Fokuskan isi subbab ini pada hasil akhir yang ingin diperoleh setelah tesis diselesaikan 
-terkait dengan penyelesaian persoalan pada rumusan masalah. 
-Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan 
-di akhir pelaksanaan tesis. Oleh karena itu, tuliskan juga \emph{kriteria keberhasilan} tesis ini.
-
-% --- Batasan Masalah ---
-\section{Ruang Lingkup, Asumsi, dan Batasan Masalah}
-Tuliskan ruang lingkup, asumsi, dan batasan-batasan yang diambil dalam pelaksanaan tesis. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tesis dibuat cukup spesifik.
-
-\section{Hipotesis}
-Tuliskan hipotesis yang akan diuji dalam pelaksanaan tesis. 
-Hipotesis ini merupakan pernyataan yang dapat diuji kebenarannya melalui proses pelaksanaan tesis, 
-terutama pada tahap evaluasi. Hipotesis yang baik memiliki karakteristik sebagai berikut:
-\begin{enumerate}
-    \item Spesifik: Hipotesis harus jelas dan spesifik, sehingga dapat diuji dengan cara yang terukur.
-    \item Terukur: Hipotesis harus dapat diuji dengan data atau informasi yang dapat diukur, sehingga dapat dinilai kebenarannya.
-    \item Relevan: Hipotesis harus relevan dengan topik tesis dan dapat memberikan kontribusi yang signifikan terhadap penyelesaian masalah yang dibahas.
-    \item Dapat diuji: Hipotesis harus dapat diuji melalui proses pelaksanaan tesis, terutama pada tahap evaluasi, sehingga dapat dinilai kebenarannya.
+\begin{enumerate}[label=RQ\arabic*:, leftmargin=*]
+\item Bagaimana merancang arsitektur referensi pertahanan berbasis C6ISR yang sesuai dengan karakteristik dan kebutuhan pertahanan Indonesia?
+\item Bagaimana penerapan arsitektur referensi tersebut menggunakan TOGAF ADM pada Kemhan RI?
+\item Sejauh mana arsitektur referensi yang dihasilkan memenuhi kriteria \textit{completeness}, \textit{consistency}, \textit{traceability}, \textit{reusability}, dan \textit{adaptability}?
 \end{enumerate}
 
-Hipotesis diperoleh dari premis-premis yang ada pada latar belakang dan rumusan masalah. 
-Oleh karena itu, tuliskan dulu premis-premis yang menentukan hipotesis tersebut sebelum menuliskan hipotesisnya.
+\section{Tujuan Penelitian}
+\label{sec:I.3}
 
+Tujuan penelitian ini adalah sebagai berikut.
 
-
-% --- Metodologi Pengerjaan TA ---
-\section{Metodologi}
-Tuliskan semua tahapan spesifik yang akan dilalui selama pelaksanaan tesis. 
-Ada beberapa pendekatan metodologi yang dapat digunakan dalam pelaksanaan tesis sesuai dengan topik yang dibahas, 
-misalnya Design Science Research Methodology (DSRM), Design Research Methodology (DRM), Cross-Industry Standard Process for Data Mining (CRISP-DM), dan sebagainya.
-
-Secara umum,  metodologi pengerjaan tesis meliputi tahapan, langkah-langkah, atau tata cara melakukan:
-\begin{enumerate}
-\item	Investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara komprehensif di Bab II Studi Literatur.
-\item   Analisis kebutuhan berdasarkan hasil investigasi dan studi literatur. Jelaskan metode yang digunakan untuk melakukan analisis kebutuhan, misalnya wawancara, survei, observasi, atau studi kasus. Hasil analisis kebutuhan ini akan dijelaskan secara rinci di bab berikutnya.
-\item   Perancangan solusi berdasarkan hasil analisis kebutuhan. Jelaskan metode atau tahapan perancangan yang digunakan, dengan abstraksi yang bertahap dari generik ke spesifik, misalnya dengan pendekatan \textit{C4 model}. Selain itu, gunakan alat bantu penggambaran diagram yang tepat, misalnya menggunakan diagram UML, SySML, ERD, atau yang lainnya. 
-\item   Jika ada implementasi terhadap hasil rancangan, jelaskan teknologi dan alat bantu yang digunakan untuk mengimplementasikan rancangan. 
-\item   Evaluasi terhadap solusi yang telah diimplementasikan. Jelaskan metode pengujian, metrik evaluasi, atau studi kasus yang digunakan untuk menilai keberhasilan solusi. 
-\item   Penarikan kesimpulan dan saran berdasarkan hasil pelaksanaan tesis berdasarkan hasil evaluasi.   
-\vfill % memaksa konten di atas untuk berada di bagian atas halaman dan menyisakan ruang kosong di bawah konten ini akibat berakhirnya section ini
+\begin{enumerate}[label=\arabic*.]
+\item Merancang arsitektur referensi pertahanan berbasis C6ISR, yaitu DERA, yang sesuai dengan karakteristik dan kebutuhan pertahanan Indonesia.
+\item Menerapkan DERA menggunakan TOGAF ADM pada Kemhan RI untuk menghasilkan EA beserta \textit{roadmap} transformasi digital 2026–2030.
+\item Mengevaluasi DERA berdasarkan kriteria \textit{completeness}, \textit{consistency}, \textit{traceability}, \textit{reusability}, dan \textit{adaptability}.
 \end{enumerate}
 
-% --- Sistematika Penulisan ---
+\section{Manfaat Penelitian}
+\label{sec:I.4}
+
+Penelitian ini diharapkan memberikan manfaat sebagai berikut.
+
+\begin{enumerate}[label=\arabic*.]
+\item Bagi pengembangan ilmu, penelitian ini menghasilkan arsitektur referensi sektoral pertahanan berbasis C6ISR beserta panduan penerapannya dalam TOGAF ADM. Hasil tersebut dapat menjadi rujukan pengembangan EA di sektor pertahanan serta contoh perumusan konsep domain menjadi arsitektur referensi.
+\item Bagi Kemhan RI, penelitian ini menyediakan acuan bersama bagi penyusunan EA di lingkungan pertahanan, serta EA dan \textit{roadmap} transformasi digital 2026–2030 sebagai arah integrasi sistem, data, dan komando-kendali.
+\end{enumerate}
+
+\section{Ruang Lingkup Penelitian}
+\label{sec:I.5}
+
+Ruang lingkup penelitian ini adalah sebagai berikut.
+
+\begin{enumerate}[label=\arabic*.]
+\item DERA dirancang pada tingkat EA, tata kelola, kebijakan, dan standardisasi, meliputi domain bisnis, data, aplikasi, dan teknologi dengan C6ISR sebagai landasan konseptual.
+\item DERA dirancang dari sudut pandang Kemhan RI sebagai penyusun kebijakan dan standar pertahanan. Komando dan pengendalian operasional tetap berada pada Mabes TNI, sehingga penelitian tidak memodelkan prosedur operasi TNI.
+\item Penelitian tidak mencakup informasi rahasia militer maupun perancangan teknis operasi tempur. Pemodelan dilakukan berdasarkan doktrin, kebijakan, dan sumber terbuka.
+\item Penerapan DERA dilakukan menggunakan TOGAF ADM tanpa mengubah struktur fasenya, dari Fase \textit{Preliminary} hingga Fase \textit{Migration Planning}. Fase \textit{Implementation Governance} dan \textit{Architecture Change Management} hanya diuraikan dalam panduan penerapan DERA dan tidak dilaksanakan.
+\item Evaluasi hanya dilakukan terhadap DERA dan bersifat \textit{ex-ante}, yaitu menilai rancangan sebelum digunakan secara luas. EA Kemhan RI berperan sebagai demonstrasi penerapan dan tidak dievaluasi secara tersendiri.
+\end{enumerate}
+
+\section{Hasil / Keluaran yang Diharapkan}
+\label{sec:I.6}
+
+Berdasarkan tujuan penelitian, hasil yang diharapkan adalah sebagai berikut.
+
+\begin{enumerate}[label=\arabic*.]
+\item DERA, yaitu arsitektur referensi pertahanan berbasis C6ISR yang memuat prinsip arsitektur, \textit{Capability Reference Model}, arsitektur referensi domain bisnis, data, aplikasi, dan teknologi, standar dan \textit{building blocks}, serta panduan penerapan dalam TOGAF ADM.
+\item EA Kemhan RI sebagai hasil penerapan DERA, meliputi arsitektur bisnis, data, aplikasi, dan teknologi, beserta paket pekerjaan, \textit{roadmap}, dan rencana migrasi 2026–2030.
+\item Hasil evaluasi DERA berdasarkan kriteria \textit{completeness}, \textit{consistency}, \textit{traceability}, \textit{reusability}, dan \textit{adaptability}, beserta masukan pakar untuk penyempurnaan DERA.
+\end{enumerate}
+
+\section{Metodologi Penelitian}
+\label{sec:I.7}
+
+\subsection{Pendekatan Penelitian}
+\label{sec:I.7.1}
+
+Penelitian ini menggunakan pendekatan \textit{Design Science Research Methodology} (DSRM), yang bertujuan menghasilkan artefak untuk menyelesaikan permasalahan nyata dan dapat dievaluasi kegunaannya. Artefak tersebut dapat berupa konstruk, model, metode, atau instansiasi \cite{Hevner2004}. Artefak utama penelitian ini berupa model, yaitu DERA. Panduan penerapan DERA dalam TOGAF ADM merupakan artefak pendukung berupa metode, sedangkan EA Kemhan RI merupakan instansiasi yang mendemonstrasikan penggunaan DERA. DSRM dipilih karena arsitektur referensi perlu dirancang berdasarkan kebutuhan, didemonstrasikan pada kondisi nyata, dan dievaluasi kualitasnya. Dengan demikian, DSRM digunakan untuk menjalankan penelitian, sedangkan TOGAF ADM digunakan untuk mengembangkan EA Kemhan RI dengan memanfaatkan DERA.
+
+\subsection{Tahapan Penelitian}
+\label{sec:I.7.2}
+
+Penelitian ini mengikuti enam tahapan DSRM menurut \textcite{Peffers2007}. Ringkasan aktivitas dan keluaran setiap tahapan disajikan pada Tabel~\ref{tab:I.1}.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.234\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.335\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.252\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.086\linewidth}@{}}
+\caption{Tahapan Penelitian}\label{tab:I.1}\\
+\toprule
+\textbf{Tahapan DSRM} & \textbf{Aktivitas Utama} & \textbf{Keluaran} & \textbf{Bab}\\
+\midrule
+\endfirsthead
+\multicolumn{4}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{Tahapan DSRM} & \textbf{Aktivitas Utama} & \textbf{Keluaran} & \textbf{Bab}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+1. \textit{Problem Identification and Motivation} & Analisis dokumen dan regulasi, wawancara dengan unit kerja Kemhan RI, serta kajian literatur & Permasalahan dan kesenjangan penelitian & I, II\\
+2. \textit{Defining the Objectives for a Solution} & Perumusan kebutuhan arsitektur referensi dari karakteristik domain pertahanan, regulasi nasional, dan praktik terbaik & Kebutuhan arsitektur referensi & III\\
+3. \textit{Design and Development} & Perancangan komponen DERA dan panduan penerapannya dalam TOGAF ADM & DERA dan panduan penerapan & III\\
+4. \textit{Demonstration} & Penerapan DERA pada Kemhan RI menggunakan TOGAF ADM dari Fase \textit{Preliminary} hingga \textit{Migration Planning} & EA Kemhan RI dan \textit{roadmap} 2026–2030 & IV\\
+5. \textit{Evaluation} & Evaluasi analitis (\textit{completeness}, \textit{consistency}, \textit{traceability}) dan penilaian pakar (\textit{reusability}, \textit{adaptability}) & Hasil evaluasi dan masukan penyempurnaan DERA & V\\
+6. \textit{Communication} & Penyusunan naskah tesis, kajian ringkas, dan presentasi & Naskah tesis dan kajian ringkas & I–VI\\
+\end{longtable}
+\endgroup
+
+Tabel~\ref{tab:I.1} menunjukkan bahwa setiap tahapan DSRM dipetakan ke bab tesis. Hasil evaluasi pada Tahap 5 digunakan untuk menyempurnakan DERA, sehingga Tahap 3 hingga Tahap 5 dapat berlangsung secara iteratif.
+
+\subsubsection{Tahap 1 – Problem Identification and Motivation}
+\label{sec:I.7.2.1}
+
+Tahap ini mengidentifikasi permasalahan dan urgensi penelitian melalui analisis dokumen dan regulasi, wawancara dengan unit kerja Kemhan RI, serta kajian penelitian terdahulu. Hasilnya adalah permasalahan \textit{silo} pada empat lapisan Kemhan RI dan belum tersedianya arsitektur referensi pertahanan yang menjangkau kapabilitas operasional sekaligus selaras dengan Arsitektur SPBE.
+
+\subsubsection{Tahap 2 – Defining the Objectives for a Solution}
+\label{sec:I.7.2.2}
+
+Tahap ini menetapkan sasaran yang harus dipenuhi oleh arsitektur referensi. Sasaran diturunkan dari tiga sumber, yaitu karakteristik domain pertahanan berbasis C6ISR, regulasi nasional, serta praktik terbaik \textit{framework} dan arsitektur referensi pertahanan, kemudian dirumuskan sebagai kebutuhan arsitektur referensi. Kebutuhan tersebut menjadi dasar perancangan pada Tahap 3 dan acuan penilaian pada Tahap 5
+
+\subsubsection{Tahap 3 – Design and Development}
+\label{sec:I.7.2.3}
+
+Tahap ini merancang DERA melalui sintesis konsep C6ISR, \textit{framework} EA pertahanan, TOGAF, dan regulasi nasional. Unsur C6ISR dipetakan ke dalam domain bisnis, data, aplikasi, dan teknologi, kemudian dirumuskan menjadi komponen DERA beserta hubungan antarkomponennya. Tahap ini juga menyusun panduan penerapan DERA yang menetapkan pemanfaatan setiap komponen DERA pada fase TOGAF ADM tanpa mengubah struktur fasenya.
+
+\subsubsection{Tahap 4 – Demonstration}
+\label{sec:I.7.2.4}
+
+Tahap ini menerapkan DERA pada Kemhan RI menggunakan TOGAF ADM dari Fase \textit{Preliminary} hingga Fase \textit{Migration Planning}. Hasilnya adalah EA Kemhan RI pada domain bisnis, data, aplikasi, dan teknologi, beserta paket pekerjaan, \textit{roadmap}, dan rencana migrasi 2026–2030. Demonstrasi ini menunjukkan bahwa DERA dapat digunakan sebagai acuan dalam mengembangkan arsitektur organisasi pertahanan.
+
+\subsubsection{Tahap 5 – Evaluation}
+\label{sec:I.7.2.5}
+
+Tahap ini mengevaluasi DERA berdasarkan lima kriteria. Metode evaluasi disesuaikan dengan sifat setiap kriteria, sebagaimana disajikan pada Tabel~\ref{tab:I.2}.
+
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.189\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.297\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.227\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.194\linewidth}@{}}
+\caption{Kriteria dan Metode Evaluasi DERA}\label{tab:I.2}\\
+\toprule
+\textbf{Kriteria} & \textbf{Definisi} & \textbf{Metode} & \textbf{Ukuran}\\
+\midrule
+\endfirsthead
+\multicolumn{4}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{Kriteria} & \textbf{Definisi} & \textbf{Metode} & \textbf{Ukuran}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\textit{Completeness} & Sejauh mana DERA mencakup seluruh kebutuhan arsitektur referensi, unsur C6ISR, dan komponen arsitektur referensi. & Evaluasi analitis: matriks cakupan & Persentase cakupan (target 100\%)\\
+\textit{Consistency} & Sejauh mana komponen DERA tidak saling bertentangan, baik di dalam satu domain maupun antardomain. & Evaluasi analitis: pemeriksaan aturan \textit{metamodel} DERA & Persentase aturan konsistensi yang terpenuhi (target 100\%)\\
+\textit{Traceability} & Sejauh mana setiap komponen DERA dapat ditelusuri ke kebutuhan arsitektur referensi dan unsur C6ISR. & Evaluasi analitis: matriks keterlacakan dua arah & Persentase komponen terlacak (target 100\%)\\
+\textit{Reusability} & Sejauh mana DERA dapat digunakan sebagai acuan oleh organisasi pertahanan selain Kemhan RI. & Penilaian pakar: kuesioner & Rata-rata skor Likert 1–5 (target ≥ 3,41)\\
+\textit{Adaptability} & Sejauh mana DERA dapat disesuaikan dengan konteks organisasi dan perubahan kebutuhan. & Penilaian pakar: kuesioner & Rata-rata skor Likert 1–5 (target ≥ 3,41)\\
+\end{longtable}
+\endgroup
+
+Tabel~\ref{tab:I.2} menunjukkan bahwa \textit{completeness}, \textit{consistency}, dan \textit{traceability} dievaluasi secara analitis karena ketiganya merupakan sifat internal DERA yang dapat diperiksa langsung pada artefaknya, sehingga hasilnya dapat diulang dan diverifikasi. Sebaliknya, \textit{reusability} dan \textit{adaptability} berkaitan dengan penggunaan DERA di luar konteks Kemhan RI, sehingga dinilai oleh pakar yang memahami EA dan pertahanan, yaitu pakar akademisi, pakar praktisi Kemhan RI, dan pakar mitra. Penilaian pakar menggunakan kuesioner skala Likert 1–5 yang terdiri atas sembilan butir dan dianalisis secara deskriptif per kriteria. Hasil kedua pendekatan digunakan untuk menyempurnakan DERA.
+
+\subsubsection{Tahap 6 – Communication}
+\label{sec:I.7.2.6}
+
+Tahap ini mengomunikasikan hasil penelitian melalui naskah tesis, dokumen kajian ringkas bagi pakar dan pemangku kepentingan Kemhan RI, serta presentasi kepada Kemhan RI.
+
 \section{Sistematika Penulisan}
-Tuliskan gambaran umum isi dari setiap bab yang ada dalam laporan tesis. Sistematika penulisan ini memberikan panduan bagi pembaca tentang struktur dan alur pembahasan dalam laporan tesis. Berikut adalah contoh sistematika penulisan yang dapat diikuti:
-\begin{enumerate}
-\item	Bab I Pendahuluan: Berisi latar belakang, rumusan masalah, tujuan, batasan masalah, metodologi, dan sistematika penulisan laporan tesis       .
-\item	Bab II Studi Literatur: Berisi kajian pustaka yang relevan dengan topik tesis, termasuk teori-teori, konsep-konsep, dan hasil-hasil penelitian sebelumnya yang                mendukung pelaksanaan tesis.
-\item	Bab III Analisis dan Desain: Berisi penjelasan tentang analisis masalah dan kebutuhan pengguna serta berbagai alternatif solusinya.
-\item   Bab IV Perancangan: Berisi penjelasan tentang perancangan solusi yang diusulkan, misalnya arsitektur sistem, desain basis data, antarmuka pengguna, dan sebagainya.
-\item	Bab V Implementasi: Berisi penjelasan tentang proses implementasi solusi yang diusulkan, termasuk langkah-langkah yang diambil, teknologi yang digunakan, dan hasil yang diperoleh.
-\item	Bab VI Evaluasi: Berisi analisis dan evaluasi terhadap solusi yang diimplementasikan, termasuk metode pengujian, hal-hal yang disiapkan sebelum pengujian, hasil pengujian, dan penilaian kinerja.                  
-\item   Bab VII Kesimpulan dan Saran: Berisi kesimpulan dari hasil pelaksanaan tesis dan saran untuk pengembangan lebih lanjut.
-\item   Daftar Pustaka: Berisi daftar referensi yang digunakan dalam penyusunan laporan tesis.
-\item   Lampiran: Berisi dokumen-dokumen pendukung seperti kode program, data lengkap hasil pengujian, rekaman wawancara, dan lain-lain. 
-\end{enumerate}
+\label{sec:I.8}
+
+Tesis ini terdiri atas enam bab dengan uraian sebagai berikut.
+
+\textbf{Bab I Pendahuluan}\\
+Bab ini berisi latar belakang, rumusan masalah, tujuan, manfaat, ruang lingkup, hasil yang diharapkan, metodologi penelitian, dan sistematika penulisan.
+
+\textbf{Bab II Tinjauan Pustaka}\\
+Bab ini berisi konsep transformasi digital pertahanan, EA dan Arsitektur SPBE, TOGAF, \textit{framework} EA pertahanan, konsep arsitektur referensi, C6ISR, serta penelitian terkait yang menjadi dasar perumusan kesenjangan penelitian.
+
+\textbf{Bab III Analisis dan Perancangan Arsitektur Referensi Pertahanan}\\
+Bab ini berisi analisis kebutuhan arsitektur referensi, perancangan DERA, serta panduan penerapan DERA dalam TOGAF ADM.
+
+\textbf{Bab IV Penerapan DERA pada Kementerian Pertahanan RI}\\
+Bab ini berisi penerapan DERA pada Kemhan RI menggunakan TOGAF ADM dari Fase \textit{Preliminary} hingga Fase \textit{Migration Planning}, termasuk \textit{roadmap} dan rencana migrasi 2026–2030.
+
+\textbf{Bab V Evaluasi}\\
+Bab ini berisi evaluasi DERA secara analitis berdasarkan kriteria \textit{completeness}, \textit{consistency}, dan \textit{traceability}, penilaian pakar berdasarkan kriteria \textit{reusability} dan \textit{adaptability}, serta pembahasan hasil penelitian.
+
+\textbf{Bab VI Kesimpulan dan Saran}\\
+Bab ini berisi kesimpulan yang menjawab pertanyaan penelitian serta saran bagi pengembangan DERA dan penelitian selanjutnya.

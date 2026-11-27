@@ -1,4 +1,4 @@
-# LaTeX auxiliary
+# File bantu LaTeX (dibuat ulang saat compile)
 *.aux
 *.bbl
 *.bbl-SAVE-ERROR
@@ -11,14 +11,15 @@
 *.lot
 *.loa
 *.lol
+*.equ
 *.run.xml
 *.synctex.gz
 *.fdb_latexmk
 *.fls
 *.xdv
 
-# OS & Syncthing
+# File sistem macOS
 .DS_Store
+# File konflik Syncthing (drive S:)
 *.sync-conflict-*
-.stfolder
-.stversions
+.stversions/

@@ -1,5 +1,9 @@
 \cleardoublepage
-\renewcommand{\cftloftitlefont}{\hfill\large\bfseries\MakeUppercase}
+% Judul ditulis langsung dalam huruf kapital (tanpa \MakeUppercase) karena
+% \MakeUppercase pada judul tocloft memicu error "Missing \endcsname inserted"
+% di MiKTeX/LaTeX terbaru.
+\renewcommand{\listfigurename}{DAFTAR GAMBAR}
+\renewcommand{\cftloftitlefont}{\hfill\large\bfseries}
 \renewcommand{\cftafterloftitle}{\hfill}
 \phantomsection
 \addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
