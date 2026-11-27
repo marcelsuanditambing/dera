@@ -722,7 +722,16 @@ ABB-12 & Pusat operasi keamanan & Teknologi & P5 & KR-03\\
 \end{longtable}
 \endgroup
 
-Tabel~\ref{tab:III.20} menunjukkan bahwa setiap ABB terhubung dengan pola dan kebutuhan arsitektur referensi. Pada arsitektur turunan, setiap ABB diwujudkan menjadi \textit{Solution Building Block} (SBB) sesuai kondisi organisasi, sebagaimana didemonstrasikan pada Bab IV.
+Tabel~\ref{tab:III.20} menunjukkan bahwa setiap ABB terhubung dengan pola dan kebutuhan arsitektur referensi. Kedudukan ABB terhadap posisi teknis dan arsitektur turunan ditunjukkan pada Gambar~\ref{fig:III.5}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.00\linewidth,height=0.8\textheight,keepaspectratio]{images/Architecture Building Blocks DERA.png}
+\caption{\textit{Architecture Building Blocks} DERA}
+\label{fig:III.5}
+\end{figure}
+
+Gambar~\ref{fig:III.5} menunjukkan bahwa ABB DERA tersebar pada domain data, aplikasi, dan teknologi, dan setiap ABB menerapkan satu atau dua pola lintas domain. Posisi teknis membatasi spesifikasi setiap ABB, sedangkan arsitektur turunan, yaitu EA Kemhan RI, EA Mabes TNI, dan EA matra, mewujudkan ABB menjadi \textit{Solution Building Block} (SBB) sesuai kondisi organisasinya.
 
 \section{Panduan Penerapan DERA}
 \label{sec:III.5}
@@ -732,16 +741,16 @@ Panduan penerapan menjelaskan cara organisasi pertahanan menggunakan DERA untuk 
 \subsection{Kedudukan DERA dalam Enterprise Continuum dan Architecture Repository}
 \label{sec:III.5.1}
 
-Dalam \textit{Enterprise Continuum}, DERA berada pada tingkat \textit{Industry Architecture}, yaitu arsitektur yang memuat komponen khusus suatu sektor \cite{TOGAF2022}. DERA diselaraskan dengan Arsitektur SPBE Nasional sebagai acuan arsitektur pemerintahan, dan mengarahkan arsitektur organisasi pertahanan pada tingkat \textit{Organization-Specific Architecture}, sebagaimana ditunjukkan pada Gambar~\ref{fig:III.5}.
+Dalam \textit{Enterprise Continuum}, DERA berada pada tingkat \textit{Industry Architecture}, yaitu arsitektur yang memuat komponen khusus suatu sektor \cite{TOGAF2022}. DERA diselaraskan dengan Arsitektur SPBE Nasional sebagai acuan arsitektur pemerintahan, dan mengarahkan arsitektur organisasi pertahanan pada tingkat \textit{Organization-Specific Architecture}, sebagaimana ditunjukkan pada Gambar~\ref{fig:III.6}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1.00\linewidth,height=0.8\textheight,keepaspectratio]{images/Kedudukan DERA dalam Enterprise Continuum.png}
 \caption{Kedudukan DERA dalam \textit{Enterprise Continuum}}
-\label{fig:III.5}
+\label{fig:III.6}
 \end{figure}
 
-Gambar~\ref{fig:III.5} menunjukkan bahwa satu DERA dapat diturunkan menjadi beberapa arsitektur organisasi, yaitu EA Kemhan RI, EA Mabes TNI, dan EA matra. Dengan demikian, keterpaduan lintas organisasi pertahanan dibangun dari acuan yang sama. Di dalam \textit{Architecture Repository}, komponen DERA disimpan pada kelas yang sesuai, sebagaimana disajikan pada Tabel~\ref{tab:III.21}.
+Gambar~\ref{fig:III.6} menunjukkan bahwa satu DERA dapat diturunkan menjadi beberapa arsitektur organisasi, yaitu EA Kemhan RI, EA Mabes TNI, dan EA matra. Dengan demikian, keterpaduan lintas organisasi pertahanan dibangun dari acuan yang sama. Di dalam \textit{Architecture Repository}, komponen DERA disimpan pada kelas yang sesuai, sebagaimana disajikan pada Tabel~\ref{tab:III.21}.
 
 \begingroup\small\setstretch{1.0}
 \begin{longtable}{@{}>{\raggedright\arraybackslash\hspace{0pt}}p{0.354\linewidth}>{\raggedright\arraybackslash\hspace{0pt}}p{0.615\linewidth}@{}}
@@ -771,16 +780,16 @@ Tabel~\ref{tab:III.21} menunjukkan bahwa sebagian besar komponen DERA berada pad
 \subsection{Pemanfaatan DERA pada Fase ADM}
 \label{sec:III.5.2}
 
-DERA digunakan melalui siklus ADM baku tanpa fase tambahan. Titik masuk utamanya adalah langkah \textit{Select Reference Models, Viewpoints, and Tools} pada awal Fase B, C, dan D \cite{TOGAF2022}. Komponen DERA yang digunakan pada setiap fase ditunjukkan pada Gambar~\ref{fig:III.6}.
+DERA digunakan melalui siklus ADM baku tanpa fase tambahan. Titik masuk utamanya adalah langkah \textit{Select Reference Models, Viewpoints, and Tools} pada awal Fase B, C, dan D \cite{TOGAF2022}. Komponen DERA yang digunakan pada setiap fase ditunjukkan pada Gambar~\ref{fig:III.7}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.94\linewidth,height=0.8\textheight,keepaspectratio]{images/TOGAF_ADM_Standar_dengan_Kotak_DERA.drawio.png}
 \caption{Pemanfaatan DERA pada Siklus ADM}
-\label{fig:III.6}
+\label{fig:III.7}
 \end{figure}
 
-Gambar~\ref{fig:III.6} menunjukkan bahwa setiap fase ADM memiliki komponen DERA sebagai masukannya. Cara pemanfaatan komponen tersebut disajikan pada Tabel~\ref{tab:III.22}.
+Gambar~\ref{fig:III.7} menunjukkan bahwa setiap fase ADM memiliki komponen DERA sebagai masukannya. Cara pemanfaatan komponen tersebut disajikan pada Tabel~\ref{tab:III.22}.
 
 \FloatBarrier % cegah longtable menabrak footer saat ada gambar tertunda
 \begingroup\small\setstretch{1.0}
