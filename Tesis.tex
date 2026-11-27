@@ -87,6 +87,7 @@
 \usepackage[shortlabels]{enumitem} % for customizing lists
 \usepackage[skip=12pt]{parskip} % for spacing between paragraphs
 \usepackage{longtable} % for long tables
+\usepackage{placeins} % \FloatBarrier untuk tabel panjang setelah gambar
 \usepackage{booktabs} % for better table rules
 \usepackage[bahasai]{datetime2} % for date formatting in Indonesian
 \usepackage{geometry} % for page margins
@@ -416,9 +417,9 @@
 
 \input{Bab I - Pendahuluan.tex}
 \input{Bab II - Tinjauan Pustaka.tex}
-% --- Tahap 2 ---
-% \input{Bab III - Analisis dan Perancangan.tex}
-% \input{Bab IV - Implementasi.tex}
+
+\input{Bab III - Analisis dan Perancangan.tex}
+\input{Bab IV - Implementasi.tex}
 % --- Tahap 3 ---
 % \input{Bab V - Evaluasi.tex}
 % Bab VI (Kesimpulan dan Saran) belum ada di docx
